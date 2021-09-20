@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+
+		#Clear {
+			width: 70px;
+			height: 35px;
+			color: red;
+			background-color: orange;
+		}
+
+		.formstyle {
+			width: 300px;
+			height: 440px;
+			margin:auto;
+			border: 18px solid blue;
+			background-color: gray;
+		}
+
+		input {
+			width: 70.3px;
+			height: 35px;
+			background-color: white-gray;
+			color: black;
+			font-size: 20px;
+			margin-left: 1.2px;
+      border-radius: 4px;
+		}
+
+		#answerstyle {
+			width: 290px;
+			height: 40px;
+			margin-right: 1.4px;
+			background-color: gold;
+      border-radius: 5px;
+		}
+
+    .header {
+     
+      background-color: ;
+      height: 70px;
+      font-size: 25px;
+
+    }
+
+
+		
+	</style>
+</head>
+
+
+<body style="background-color: pink">
+  <div class="header">
+ <h1 align="center" >Calculator Using HTML and JavaScript</h1><br>
+</div><br><br>
+	<div class="formstyle">
+     <form name="forms">
+     	
+     <input type="text" name="answer" id="answerstyle"> <br>
+
+    <hr> 
+
+    <input type="button" value=" 1 " onclick="forms.answer.value +=  '1' ">
+     <input type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+     <input type="button" value=" 3 " onclick="forms.answer.value += '3' ">
+      <input type="button" value=" + " onclick="forms.answer.value += '+' ">
+
+       
+     <br><br>
+
+      <input type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+      <input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+      <input type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+       <input type="button" value=" - " onclick="forms.answer.value += '-' ">
+            <br><br>
+
+       <input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+       <input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+       <input type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+        <input type="button" value=" * " onclick="forms.answer.value += '*' ">
+             <br><br>
+             <input type="button" value=" . " onclick="forms.answer.value += '.' ">
+             <input type="button" value=" ( " onclick="forms.answer.value += '(' ">
+             <input type="button" value=" ) " onclick="forms.answer.value += ')' ">
+             <input type="button" value=" ^2 " onclick="forms.answer.value =Math.pow(forms.answer.value,2)">
+            <br><br>
+
+      
+      
+      
+         
+
+       <input type="button" value=" / " onclick="forms.answer.value += '/' ">
+       <input type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+       <input type="button" value=" Rt " onclick="forms.answer.value =Math.pow(forms.answer.value,1/2)">
+        <input type="button" value=" cbrt " onclick="forms.answer.value =Math.cbrt(forms.answer.value)">
+            
+
+       <br><br>
+        <input type="button" value="sin" onclick="forms.answer.value = Math.sin(forms.answer.value)">
+         <input type="button" value="cos" onclick="forms.answer.value = Math.cos(forms.answer.value)">
+          <input type="button" value="tan" onclick="forms.answer.value = Math.tan(forms.answer.value)">
+          <input type="button" value=" = " onclick="forms.answer.value =  eval (form.answer.value)">
+           
+           <br><br>
+           <input type="button" value=" log " onclick="forms.answer.value =Math.log10(forms.answer.value)">
+            <input type="button" value=" , " onclick="forms.answer.value +=','">
+            <input type="button" value=" ex " onclick="forms.answer.value =Math.exp(forms.answer.value)">
+            
+              <input type="button" value=" AC " onclick="forms.answer.value = '  ' "  id="Clear"><br><br>
+
+
+               
+
+              
+
+
+
+
+     </form>		
+
+	</div>
+	
+		
+	
+
+</body>
+</html>
